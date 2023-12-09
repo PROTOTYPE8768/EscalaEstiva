@@ -1,0 +1,298 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+    height: 125vh;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+.header{
+    background-color: #0c66ff;
+    height: 10rem;
+}
+.header .header__wrapper .header__text{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 2rem;
+    color: #EFEFEF;
+}
+
+
+.header .header__logo img {
+    max-width: 150px;
+}
+
+.header .header__logo {
+    display: flex;
+    justify-content: center;
+}
+.content .content__wrapper .content__Text h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #3C4858;
+    padding-bottom: 1rem;
+}
+.content .content__wrapper .content__Text p{
+    font-size: 14px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    color: #8492A6;
+}
+.content__wrapper{
+  padding: 4rem;
+  padding-bottom: 6rem;
+}
+
+.content___Cable{
+    text-align: center
+}
+
+.content___Cable img {
+    width: 30rem;
+    padding: 1rem;
+}
+
+
+.content__Text2{
+    flex-direction: column;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8492A6;
+    text-align: center;
+}
+
+
+.content__btn {
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.content__btn .btn{
+    display: inline-block;
+    margin-top: .7rem;
+    width: fit-content;
+    background:#0c66ff;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1.3rem 3rem 1.3rem 3rem; 
+}
+
+.footer{
+    background-color: #273444;
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem;
+    padding-bottom: 5rem;
+}
+
+.footer__image{
+    display: flex;
+    width: 15rem;
+}
+
+.footer__socmed{
+    display: flex;
+    flex-direction: row;
+    width: 3rem;
+}
+
+.footer__info{
+    color: #8492A6;
+    font-size: small;
+    padding-top: 4rem;
+    font-weight: 50;
+}
+
+.footer .footer__wrapper {
+    display: flex;
+}
+.set__one{
+  padding: 2rem;
+  
+  height: 15vh;
+  width: 20rem;
+}
+.footer__socmed{
+  justify-content: space-between;
+  display: flex;
+}
+.socmed-container{
+  padding-top: 15px;
+  display: flex;
+  gap: 1rem ;
+}
+.bottom-img{
+  display: flex;
+  justify-content: center;
+}
+.bottom-img a{
+ max-width: 125px;
+ padding-top: 28px;
+}
+
+@media screen and (max-width: 500px){
+
+.content___Cable img {
+    transform: scale(1.2);
+    width: 100rem;
+    padding: 1rem;
+}
+.header .header__wrapper .header__text{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 2rem;
+  color: #EFEFEF;
+}
+.content__btn .btn{
+  display: inline-block;
+  margin-top: .7rem;
+  width: 100%;
+  background:#0c66ff;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 70px;
+  
+}
+.content__btn{
+  display: flex;
+  justify-content: center;
+}
+.content .content__wrapper .content__Text h2{
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  color: #3C4858;
+  padding-bottom: 1rem;
+  
+}
+.footer .footer__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  color: #2b2b2b;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+  height: 170vh;
+}
+}
